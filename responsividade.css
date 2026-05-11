@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    #formcadastro {
+        /* margin-top: -100%; */
+        filter: drop-shadow(30px 30px 0px #000000); 
+    }
+    
+    #btncadastrar:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    #formcadastro {
+        margin-top: -100%;
+        filter: drop-shadow(10px 10px 0px #000000);
+        width: 95%;
+    }
+    
+    #containertitulo h1 {
+        font-size: 1.5rem; /*1 rem vale 16px, 16px é o valor padrão dos navegadores.*/
+    }
+}

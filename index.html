@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <title>Avaliação Formadora 2</title>
+</head>
+<body>
+    <div id="containerprincipal">
+        <div id="containercadastro">
+            <form id="formcadastro">
+                <div id="containertitulo">
+                    <h2>Cadastro de usuário</h2>
+                </div>
+                <input class="inputform" type="text" placeholder="Nome completo" required>
+                <input class="inputform" type="email" placeholder="Email" required>
+                <input class="inputform" type="date" required>
+                <select class="inputform" required>
+                    <option value="" disabled selected>Escolha uma opção</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <input class="inputform" id="senha" type="password" placeholder="Senha" minlength="6" maxlength="15" required>
+                <input class="inputform" id="confirmesenha" type="password" placeholder="Confirme sua senha" minlength="6" maxlength="15" required>
+                <button type="submit" id="btncadastrar">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
