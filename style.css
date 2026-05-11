@@ -66,7 +66,7 @@ option
 /*   */
 input[type="date"],select
 {
-    /* color: rgba(255, 255, 255, 0.786) !important; */
+    color: rgb(255, 255, 255) !important;
     font-weight: 800;
 }
 input:focus:invalid {
