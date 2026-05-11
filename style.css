@@ -66,8 +66,17 @@ option
 /*   */
 input[type="date"],select
 {
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     font-weight: 800;
+}
+input[type="date"]
+{
+    input[type="date"] {
+    appearance: none; /* Remove a aparência padrão do sistema */
+    -webkit-appearance: none;
+    min-height: 45px; /* Garante que o campo não "esmague" o texto */
+    color: #ffffff !important;
+}
 }
 input:focus:invalid {
   border-bottom: 3px solid red;
