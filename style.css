@@ -70,14 +70,20 @@ input[type="date"],select
     color: rgb(255, 255, 255);
     font-weight: 800;
 }
-input[type="date"]
-{
-    input[type="date"] {
+input[type="date"] {
     appearance: none; /* Remove a aparência padrão do sistema */
     -webkit-appearance: none;
     min-height: 45px; /* Garante que o campo não "esmague" o texto */
     color: #ffffff !important;
 }
+/* Isso garante que os caracteres dd/mm/aaaa fiquem visíveis */
+input[type="date"]::-webkit-datetime-edit,
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+    color: #ffffff !important;
 }
 input:focus:invalid {
   border-bottom: 3px solid red;
